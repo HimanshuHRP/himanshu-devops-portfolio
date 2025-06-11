@@ -131,7 +131,7 @@ const Index = () => {
                 <img 
                   src="https://i.postimg.cc/XqVgjMN9/hrpimage48kb.jpg" 
                   alt="Himanshu Palhade" 
-                  className="absolute inset-6 w-full h-full object-cover rounded-full"
+                  className="absolute inset-6 w-full h-full object-cover object-top rounded-full"
                 />
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-2xl animate-bounce">
                   ⚡
