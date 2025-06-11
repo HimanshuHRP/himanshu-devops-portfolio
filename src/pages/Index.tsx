@@ -129,7 +129,7 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 rounded-full animate-pulse opacity-20"></div>
                 <div className="absolute inset-4 bg-gradient-to-br from-blue-600 to-green-600 rounded-full"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                  src="https://i.postimg.cc/XqVgjMN9/hrpimage48kb.jpg" 
                   alt="Himanshu Palhade" 
                   className="absolute inset-6 w-full h-full object-cover rounded-full"
                 />
