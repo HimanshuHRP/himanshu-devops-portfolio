@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Download, ExternalLink, Github, Linkedin } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   const skills = {
@@ -320,44 +320,41 @@ const Index = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
-        <div className="container mx-auto text-center">
-          <div className="max-w-2xl mx-auto">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-muted-foreground mb-12">
               Ready to discuss your next DevOps project? Let's connect and build something amazing together.
             </p>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <Card className="p-6">
-                <CardContent className="p-0 text-center">
-                  <Mail className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-sm text-muted-foreground">hpalhade@gmail.com</p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6">
-                <CardContent className="p-0 text-center">
-                  <Phone className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Phone</h3>
-                  <p className="text-sm text-muted-foreground">+91-9766693850</p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6">
-                <CardContent className="p-0 text-center">
-                  <MapPin className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Location</h3>
-                  <p className="text-sm text-muted-foreground">Pune, Maharashtra</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-              <Mail className="mr-2 h-4 w-4" />
-              Send Message
-            </Button>
           </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <Card className="p-6">
+              <CardContent className="p-0 text-center">
+                <Mail className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+                <h3 className="font-semibold mb-2">Email</h3>
+                <p className="text-sm text-muted-foreground">hpalhade@gmail.com</p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6">
+              <CardContent className="p-0 text-center">
+                <Phone className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+                <h3 className="font-semibold mb-2">Phone</h3>
+                <p className="text-sm text-muted-foreground">+91-9766693850</p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6">
+              <CardContent className="p-0 text-center">
+                <MapPin className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+                <h3 className="font-semibold mb-2">Location</h3>
+                <p className="text-sm text-muted-foreground">Pune, Maharashtra</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <ContactForm />
         </div>
       </section>
 
