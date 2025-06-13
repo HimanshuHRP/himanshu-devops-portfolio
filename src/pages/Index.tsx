@@ -104,9 +104,20 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Resume
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+                  asChild
+                >
+                  <a 
+                    href="https://drive.google.com/file/d/1keDl6g3dIFUAtqpMRS_9R_oeWiIs7Uj_/view?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Download Himanshu's Resume"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline">
                   View My Work
