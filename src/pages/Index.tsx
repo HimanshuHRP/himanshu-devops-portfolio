@@ -19,14 +19,16 @@ const Index = () => {
       description: "A scalable blogging platform built with modern DevOps practices, supporting 10,000+ concurrent users with optimized performance.",
       tech: ["React.js", "MongoDB", "Redis", "AWS EKS", "ArgoCD", "Jenkins"],
       achievements: ["Reduced downtime by 60%", "Sub-50ms latency", "GitOps implementation"],
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-blue-500 to-cyan-500",
+      githubUrl: "https://github.com/HimanshuHRP/Wanderlust-Mega-Project.git"
     },
     {
       title: "Expense Tracker Application",
       description: "Full-stack expense management application with automated deployment pipeline and infrastructure as code.",
       tech: ["Spring Boot", "Thymeleaf", "MySQL", "Docker", "Terraform"],
       achievements: ["40% reduction in manual deployment", "60% cost savings", "Automated CI/CD"],
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-green-500 to-emerald-500",
+      githubUrl: "https://github.com/HimanshuHRP/Expenses-Tracker-WebApp.git"
     }
   ];
 
@@ -254,9 +256,20 @@ const Index = () => {
                     </ul>
                   </div>
 
-                  <Button variant="outline" className="w-full">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    asChild
+                  >
+                    <a 
+                      href={project.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      View on GitHub
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
