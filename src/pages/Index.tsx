@@ -59,6 +59,13 @@ const Index = () => {
     }
   ];
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -119,20 +126,39 @@ const Index = () => {
                     Download Resume
                   </a>
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" onClick={scrollToProjects}>
                   View My Work
                 </Button>
               </div>
 
               <div className="flex gap-4 mt-8 justify-center lg:justify-start">
-                <Button size="icon" variant="outline" className="rounded-full">
-                  <Linkedin className="h-4 w-4" />
+                <Button size="icon" variant="outline" className="rounded-full" asChild>
+                  <a 
+                    href="https://www.linkedin.com/in/himanshu-palhade" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Visit Himanshu's LinkedIn Profile"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
                 </Button>
-                <Button size="icon" variant="outline" className="rounded-full">
-                  <Github className="h-4 w-4" />
+                <Button size="icon" variant="outline" className="rounded-full" asChild>
+                  <a 
+                    href="https://github.com/HimanshuHRP" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Visit Himanshu's GitHub Profile"
+                  >
+                    <Github className="h-4 w-4" />
+                  </a>
                 </Button>
-                <Button size="icon" variant="outline" className="rounded-full">
-                  <Mail className="h-4 w-4" />
+                <Button size="icon" variant="outline" className="rounded-full" asChild>
+                  <a 
+                    href="mailto:hpalhade@gmail.com"
+                    aria-label="Send email to Himanshu"
+                  >
+                    <Mail className="h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </div>
