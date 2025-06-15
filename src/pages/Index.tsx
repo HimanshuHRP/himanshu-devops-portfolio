@@ -1,9 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
--import { Mail, Phone, MapPin, Download, ExternalLink, Github, Linkedin } from "lucide-react";
-+import { Mail, Phone, MapPin, Download, ExternalLink, Github, Linkedin, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Download, ExternalLink, Github, Linkedin, MessageCircle } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
@@ -84,23 +82,20 @@ const Index = () => {
               <a href="#projects" className="text-foreground hover:text-blue-600 transition-colors">Projects</a>
               <a href="#contact" className="text-foreground hover:text-blue-600 transition-colors">Contact</a>
             </div>
--            <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
--              Let's Talk
--            </Button>
-+            <Button 
-+              className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
-+              asChild
-+            >
-+              <a
-+                href="https://www.linkedin.com/messaging/compose/?recipient=himanshu-palhade"
-+                target="_blank"
-+                rel="noopener noreferrer"
-+                aria-label="Chat with Himanshu on LinkedIn"
-+              >
-+                <MessageCircle className="mr-2 h-4 w-4" />
-+                Let's Talk
-+              </a>
-+            </Button>
+            <Button
+              className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+              asChild
+            >
+              <a
+                href="https://www.linkedin.com/messaging/compose/?recipient=himanshu-palhade"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Himanshu on LinkedIn"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" />
+                Let's Talk
+              </a>
+            </Button>
           </div>
         </div>
       </nav>
