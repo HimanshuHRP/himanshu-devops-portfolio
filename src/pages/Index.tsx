@@ -128,7 +128,7 @@ const Index = () => {
                   asChild
                 >
                   <a 
-                    href="https://drive.google.com/file/d/1keDl6g3dIFUAtqpMRS_9R_oeWiIs7Uj_/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/103GLLDiigyXdaU_KXpXkHALC_nxpRIRf/view?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="Download Himanshu's Resume"
